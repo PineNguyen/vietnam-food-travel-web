@@ -1,0 +1,425 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul {
+  list-style: none; 
+  text-align: right;
+}
+nav ul li {
+  display: inline; 
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  
+}
+.flag img{
+  vertical-align: middle;
+  width: 30px;
+  height: 20px;
+  margin-right: 15px;
+}
+/* Hero section styles */
+#hero {
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #000000;
+}
+
+.cta-button {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* About section styles */
+#about {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Services section styles */
+#services {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#services ul {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+}
+
+#services ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#services ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/* Projects section styles */
+#projects {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.project {
+  margin: 0 20px;
+}
+
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* @media (max-width: 1022px) {
+  .projects-content {
+    flex-direction: column;
+  }
+
+  .project img {
+    display: none;
+  }
+
+  #projects {
+    height: 240px;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project h3 {
+    display: block;
+  }
+
+  #T {
+    margin-top: 70px;
+  }
+  #N {
+    margin-top: 140px;
+  }
+} */
+
+/* Testimonials section styles */
+#testimonials {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-left: 10px;
+} 
+.testimonial p {
+  text-align: right;
+  margin-right: 20px;
+}
+.testimonial a {
+  text-decoration: none;
+}
+
+/* Contact section styles */
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-content form input,
+.contact-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-content form button {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
+.project {
+  margin: 0 20px;
+  position: relative;
+}
+
+.project img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.project h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000cc;
+  color: #fff;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.project:hover h3 {
+  opacity: 1;
+}
+
+/* ------------ footer -------------- */
+.footer {
+  color: #dbd5d5;
+  background-color: #282A3A;
+}
+
+.footer > p {
+  padding-top: 16px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer-members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-member a {
+  text-decoration: none;
+  color: #dbd5d5;
+}
+
+.footer-member a:hover {
+  color: #fff;
+}
+
+.footer-school {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-school a {
+  text-decoration: none;
+  color: #dbd5d5;
+}
+
+.footer-school a:hover {
+  color: #fff;
+}
+.menu {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  /* display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 50px; */
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-logo {
+  height: 80px;
+}
+
+.menu-nav {
+  line-height: 80px;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu-nav li {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 80px;
+}
+
+.menu-nav li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #116D6E;
+}
+
+.menu-nav li a:hover {
+  color: #11a3a5;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #116d6e;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .checkbtn {
+    display: block;
+  }
+  .menu-nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #116d6e;
+    top: 80px;
+    padding-left: 0;
+    left: -100%;
+   
+    text-align: center;
+    transition: all .5s;
+  }
+  .menu-nav li{
+    display: block;
+  }
+  .menu-nav li a {
+    color: #fff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+div.hero-content{
+  padding-top: 60px;
+}
+.img-slides {
+  padding-top: 80px;
+}
+
+.carousel-item {
+  /* position: relative; */
+}
+
+.carousel-info {
+  position: absolute;
+  bottom: 1.5rem;
+  top: 10%;
+  padding: 3%;
+  width: 30%;
+  left: 10%;
+  bottom: 10%;
+  background-color: rgba(0, 85, 255, 0.162);
+}
+
+.carousel-info p {
+  color: #a6f900;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carousel-info button {
+  position: absolute;
+  bottom: 8%;
+  border: none;
+  padding: 5px 10px;
+  right: 8%;
+  background-color: #000;
+  color: #fff;
+}
+
+.carousel-info button:hover {
+  transform: scale(1.02);
+}
+
+.carousel-control-prev {
+  z-index: 1;
+}
+div.carousel-info{
+  background-color: #27666745;
+}

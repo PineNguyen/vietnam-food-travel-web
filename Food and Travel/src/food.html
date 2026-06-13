@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch và Ẩm thực</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="/Main/Trang chu/index.html"><img src="../img/logo.png" alt="" class="menu-logo"></a>
+        <ul class="menu-nav">
+            <li><a href="/Main/Trang chu/index.html">TRANG CHỦ</a></li>
+            <li><a id="am_thuc" href="food.html">ẨM THỰC</a></li>
+            <li><a id="du_lich" href="/travel(me)/html+css/Travel.html">DU LỊCH</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        
+        <div class="img-slides">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/Bac.png" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-info">
+                            <p>Nét đặc trưng trong ẩm thực miền Bắc chính là sự hài hòa trong cảm quan, hương vị rất vừa phải, không quá chua, quá cay, quá mặn hay quá nồng. Ẩm thực miền Bắc đề cao sự thanh tao, đạm bạc nhưng vẫn tôn lên được những hương vị tinh túy của những món ăn.</p>
+                            <!-- <button>Khám Phá Thêm</button> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Trung.png" alt="Chicago" class="d-block" style="width:100%">
+                        <div class="carousel-info">
+                            <p>Ẩm thực miền Trung là một tổng thể cân đối, hài hòa và tinh tế. Các món ăn miền Trung mang hương vị đặc trưng là cay và mặn, vị ngọt nhưng vừa phải. Món ăn dù có đơn giản thì cũng phải đậm đà, bởi theo quan niệm của người miền Trung món ăn phải đậm đà thì mới ngon.</p>
+                            <!-- <button>Khám Phá Thêm</button> -->
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Nam.png" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-info">
+                            <p>Ẩm thực miền Nam từ lâu được yêu thích bởi hương vị dân dã, thơm ngon từ chính những nguyên liệu gần gũi, thân thuộc. Người dân nơi đây gửi gắm vào từng món ăn những gì tinh túy nhất của đất phù sa và cả phẩm chất thật thà vốn có của họ.</p>
+                            <!-- <button>Khám Phá Thêm</button> -->
+                        </div>  
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="content row">
+        <div class="content-menu col-md-3">
+            <div id="myBtnContainer">
+                <p>Mục lục</p>
+                <ul>
+                    <li  class="bttn active allEl" onclick="filterSelection('all')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Tất cả</span>
+                    </li>
+                    <li class="bttn nor" onclick="filterSelection('northern')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Miền Bắc</span>
+                    </li>
+                    <li class="bttn midd" onclick="filterSelection('middle')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Miền Trung</span>
+                    </li>
+                    <li class="bttn sou" onclick="filterSelection('southern')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Miền Nam</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-info col-md-9">
+            <p>Danh sách</p>
+            <div class="row">
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BanhEpHue.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh ép Huế</h5>
+                            <p>Chiếc bánh ép Huế nhỏ nhưng có vị béo ngậy, dai của bánh, chua giòn rau củ, mùi thơm của hành lá, thịt, trứng, mùi dậy của hải sản mực tôm cá… tất cả làm nên một món ăn trứ danh đất thần kinh !</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/KeoDua.jpeg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Kẹo dừa Bến Tre</h5>
+                            <p>Kẹo dừa Bến Tre không chỉ là một món chế biến để ăn chơi trong gia đình mà nó còn làm món quà biếu thân tình cho bạn bè, họ hàng. Với nguyên liệu khá đơn giản từ mạch nha và nước cốt dừa đã làm nên món đặc sản thú vị mà bất cứ ai đến Bến Tre cũng phải thử một lần.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BunChaHaNoi.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bún chả Hà Nội</h5>
+                            <p>Chả miếng, chả băm đượm mùi nướng than, mềm ngọt mà không bị khô, bún trắng muốt, nước chấm hài hòa chua ngọt, dậy vị the cay của ớt, tỏi giã, điểm dăm ba lát ớt đỏ bắt mắt.. tất cả quyện lại như bản hòa tấu đẹp.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/ChaCaLaVong.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Chả cá lã vọng</h5>
+                            <p>Chả cá Lã Vọng là tên của món chả cá đặc sản Hà Nội. Đây là món chả làm từ cá (thường là cá lăng) thái miếng đem tẩm ướp, nướng trên than củi rồi rán lại trong chảo mỡ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/CaLocNuongTrui.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Cá lóc nướng trui</h5>
+                            <p>Cá lóc nướng trui là một món ăn bình dị dân giã của người miền quê. Mỗi chiều khi ra đồng về người dân thường mang về một con cá lóc dùng để nướng làm bữa cơm chiều.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/LauCaKeo.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Lẩu cá kèo lá giang</h5>
+                            <p>Lẩu cá kèo lá giang là một trong những món ăn dân dã miền Nam vô cùng nổi tiếng với những loại nguyên liệu đơn giản như các loại rau, lá giang, cá kèo… đã tạo nên một món ngon vô cùng hấp dẫn mang đến một bữa ăn ấm áp cho những ngày cuối tuần.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BunBoHue.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bún bò Huế</h5>
+                            <p>Bún bò là một trong những đặc sản của xứ Huế, mặc dù món bún này phổ biến trên cả ba miền ở Việt Nam và cả người Việt tại hải ngoại.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/MyQuang.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Mỳ Quảng</h5>
+                            <p>Mỳ Quảng thường được làm từ bột gạo xay mịn với nước từ hạt dành dành và trứng cho có màu vàng và tráng thành từng lớp bánh mỏng, sau đó thái theo chiều ngang để có những sợi mỳ mỏng khoảng 5 -10mm.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BunCaRoDong.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bún cá rô đồng Hà Nam</h5>
+                            <p>Bún cá Rô Đồng là đặc sản Phủ Lý Hà Nam đậm hương vị đồng quê. Món ăn hấp dẫn thực khách bởi vị béo giòn của cá rô chiên kết hợp với vị tươi ngọt tự nhiên của rau cải, cà chua, thơm...Nước dùng được ninh từ xương cá ngọt thanh ăn hoài không ngấy.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/NemChuaQuangYen.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Nem chua Quảng Yên</h5>
+                            <p>Nem chua, nem chạo là đặc sản của Hạ Long mà du khách khó lòng chối từ. Và nơi có món nem ngon nhất phải kể đến nem Quảng Yên với hương vị đúng vị truyền thống, kỹ thuật chế biến đúng chuẩn.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BanhCanhGhe.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh canh ghẹ</h5>
+                            <p>Bánh canh ghẹ Vũng Tàu nóng hổi với những sợi bánh dai mềm và thịt ghẹ tươi được đánh bắt trong ngày. Bánh canh ghẹ ngon nhất là phần nước dùng sánh sệt cùng lớp gạch cua màu vàng bắt mắt. Khi ăn sẽ cảm nhận được vị ngọt từ thịt ghẹ và vị đậm đà của nước dùng, thêm một chút quẩy nóng giòn thì rất tuyệt vời. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/CaoLau.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Cao Lầu</h5>
+                            <p>Món mì này có sợi mì màu vàng, được dùng với tôm, thịt heo, các loại rau sống và rất ít nước dùng. Sợi mì màu vàng là do được trộn với tro từ một loại cây ở địa phương.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/ComLamBacKan.png);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Cơm lam Bắc Kạn</h5>
+                            <p>Cơm lam được chế biến theo một cách đặc biệt, đó là nướng cơm trong ống tre. Cơm khi chín rất thơm, dẻo và ngon do có thấm nước của ống tre.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/GoiHuCuDua.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Gỏi hủ củ dừa</h5>
+                            <p>Những món gỏi của miền Nam có rất nhiều loại trong đó đặc trưng ẩm thực miền Nam là gỏi củ hủ dừa. Củ hủ dừa là phần đọt non bên trong cây dừa. Mỗi cây dừa bị chặt thì chỉ có thể làm 2 – 3 dĩa gỏi nên đây được xem là một món ăn “dân dã đắt tiền” tại miền Tây</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BanhCanhHe.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh canh hẹ Phú Yên</h5>
+                            <p>Nghe cái tên là biết món ăn sẽ nổi bật bởi màu xanh mát của hẹ, ngoài ra chắc chắn có những sợi bánh nhỏ có độ dai mềm dẻo nhất định, những miếng chả cá được hấp chín và chiên vàng thơm ngon, đặc biệt là nước lèo được nấu từ cá tươi, có vị ngọt đậm đà tự nhiên chứ không béo và dễ ngán như nấu từ xương heo đâu.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BanhGaiNinhGiang.png);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh gai Ninh Giang</h5>
+                            <p>Bánh gai không chỉ là đặc sản cổ truyền vốn là niềm tự hào của người dân Ninh Giang, Hải Dương mà còn là sản phẩm du lịch độc đáo mang lại thu nhập chính giúp người dân thoát nghèo và vươn lên làm giàu.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/KeoCuDo.webp);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Keo Cu đơ</h5>
+                            <p>Kẹo cu đơ chính là một trong những đặc sản nổi tiếng của người dân Hà Tĩnh. Kẹo Cu Đơ được làm chủ yếu từ đậu phộng (lạc) và mật mía. Mật mía và lạc nhân (đậu phộng hạt) được bỏ vào chảo, đun sôi với lửa nhỏ.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BanhDucLaDua.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh đúc lá dứa</h5>
+                            <p>Bánh đúc có màu sắc đặc trưng với sắc xanh pha trắng, khi ăn sẽ được rưới thêm nước cốt dừa béo ngậy, rắc thêm ít đậu phộng hoặc vừng nữa là ngon hết ý. Bánh đúc cắn vào sẽ cảm thấy dai sần sật cùng với đó là mùi thơm lá dứa cực kỳ hấp dẫn cho bạn.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/GoiCaTrich.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Gỏi cá trích</h5>
+                            <p>Gỏi cá trích Phú Quốc với điểm mạnh là các loại cá được đánh bắt hoàn toàn tươi sống, cách chế biến công phu giúp giữ được hương vị riêng. Khi ăn thì ta có thể dùng chung với bánh tráng, rau sống và chấm với sốt đặc biệt nữa đấy.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/TrauGacBep.png);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Trâu gác bếp</h5>
+                            <p>Trâu gác bếp đã trở thành truyền thuyết với vị cay tê từ gia vị đặc trưng miền Tây Bắc, ai mùi khói bếp khiến bất cứ ai cũng phải mê. Nó không cay, nó không cứng nhưng lại tê tê ngòn ngọt!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/ComLangVong.png);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Cốm làng Vòng</h5>
+                            <p>Cốm làng Vòng được làm từ loại lúa nếp hoa vàng và là loại lúa non, nhưng không non quá vì sẽ làm cốm bị nát, cũng không già quá vì cốm sẽ cứng, ăn mất vị ngon.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BanhDauXanh.png);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh đậu xanh</h5>
+                            <p>Bánh đậu xanh Hải Dương nổi tiếng khắp đất nước bởi khi ăn bánh có vị ngọt thanh, vừa bỏ vào miệng là tan biến ngay nhưng người ăn vẫn kịp thưởng thức thưởng thức được vị ngọt, chút béo và hương thơm thoang thoảng mùi hương hoa bưởi và mùi đỗ xanh, khiến người ăn bất giác mà tiếp tục mở những miếng bánh khác ra thưởng thức.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/BãnheoCanTho.webp);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh xèo Cần Thơ</h5>
+                            <p>Nói đến bánh xèo thì phải nhắc đến Cần Thơ, bánh xèo Cần Thơ nổi tiếng là một trong những đặc sản miền Nam hấp dẫn du khách nhất. Hãy tưởng tượng từng lớp bánh xèo thơm ngon, giòn rụm với nhân bánh từ các loại nguyên liệu như: tôm tép, thịt heo, thịt gà, đậu xanh, đu đủ,... ăn kèm cùng với các loại rau sống, chấm với nước mắm chua ngọt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/GoiCaNamO.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Gỏi cá Nam Ô</h5>
+                            <p>Gỏi cá Nam Ô có 2 loại là gỏi cá khô và gỏi cá ướt, tuy cùng một nguyên liệu nhưng cách chế biến 2 loại gỏi cá này tương đối khác nhau. Đối với gỏi cá khô thì sau khi sơ chế xong và đợi cho cá ráo nước sẽ được trộn với thính, vừng rang, lạc rang, bánh tráng nướng giã nhỏ cùng nhiều gia vị đặc trưng khác.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="detail.html">
+                        <div class="content-card-img" style="background-image: url(../img/GaDoiTienYen.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Gà đồi Tiên Yên</h5>
+                            <p>Gà đồi Tiên Yên là một trong những đặc sản trứ danh của vùng đất mỏ. Đây là giống gà được chăn thả tự nhiên ở các triền đồi, núi của huyện Tiên Yên với thịt ngọt chắc, da giòn vàng ươm cùng mùi vị thơm ngon khó cưỡng.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Thành viên</p>
+        <div class="footer-members">
+            <div class="footer-member">
+                Họ tên: <br>
+                Mã SV: 22... <br>
+                <i class="fa-solid fa-phone"></i><a href="tel:+84..."> SĐT: +84...</a> <br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:....@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+            </div>
+            <div class="footer-member">
+                Họ tên: <br>
+                Mã SV: 22... <br>
+                <i class="fa-solid fa-phone"></i><a href="tel:+84..."> SĐT: +84...</a> <br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:....@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+            </div>
+            <div class="footer-member">
+                Họ tên: <br>
+                Mã SV: 22... <br>
+                <i class="fa-solid fa-phone"></i><a href="tel:+84..."> SĐT: +84...</a> <br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:....@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+            </div>
+        </div>
+       <div class="footer-school">
+            <b>Copyright © 2017-2023 - Trường Đại học Công nghệ Thông tin & Truyền Thông Việt - Hàn, Đại học Đà Nẵng</b> <br>
+            <i class="fa-solid fa-house"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+Th%C3%B4ng+tin+v%C3%A0+Truy%E1%BB%81n+th%C3%B4ng+Vi%E1%BB%87t+-+H%C3%A0n/@15.9752982,108.2497801,17z/data=!3m1!4b1!4m6!3m5!1s0x3142108997dc971f:0x1295cb3d313469c9!8m2!3d15.9752931!4d108.252355!16s%2Fg%2F1yjg80dyy?hl=vi&entry=ttu" target="_blank"> Địa chỉ: Khu Đô thị Đại học Đà Nẵng, Đường Nam Kỳ Khởi Nghĩa, quận Ngũ Hành Sơn, TP. Đà Nẵng</a> <br>
+            <i class="fa-solid fa-phone"></i><a href="tel:02366552688"> Điện thoại: 0236.6.552.688</a> 
+            <i class="fa-solid fa-envelope"></i><a href="mailto:daotao@vku.udn.vn"> daotao@vku.udn.vn</a> 
+       </div>
+    </div>
+    <script src="food.js"></script>
+</body>
+</html>
