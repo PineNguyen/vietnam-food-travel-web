@@ -1,0 +1,26 @@
+/* ==========================================
+   DESIGN TOKENS & CSS VARIABLES
+   Vietnam Food & Travel Web Project
+   ========================================== */
+
+:root {
+  /* Color Palette */
+  --primary-color: #223440;
+  --secondary-color: #d4c4ab;
+  --accent-color: #4c6b3d;
+  --bg-light: #ecfdea;
+  --bg-dark: #1a1a1a;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --text-muted: #666666;
+  --border-color: #e0e0e0;
+  
+  /* Typography Tokens */
+  --font-heading: 'Praise', cursive;
+  --font-cursive: 'Dancing Script', cursive;
+  --font-accent: 'Comforter', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}

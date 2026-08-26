@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/mainPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@600&family=Praise&display=swap" rel="stylesheet">
+  <title>Food & Travelling</title>
+</head>
+
+<body style="margin: 0;">
+  <div id="preloader"></div>
+  <div id="overlay">
+    <div id="character">
+      <img src="./assets/images/intro_character.png" alt="Animation Character">
+    </div>
+  </div>  
+  
+  <div class="menu">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="menu-logo"></a>
+
+    <ul class="menu-nav">
+        <li><a href="./index.html">TRANG CHỦ</a></li>
+        <li><a id="gioi_thieu" href="#infor">GIỚI THIỆU</a></li>
+        <li><a id="am_thuc" href="#food">ẨM THỰC</a></li>
+        <li><a id="du_lich" href="#travel">DU LỊCH</a></li>
+        <li><a href="./pages/contact.html">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+
+  <section id="first" class="one">
+    <div class="left">
+      <img src="./assets/images/travel_1.jpg" alt="">
+      <img src="./assets/images/travel_2.jpg" alt="">
+      <img src="./assets/images/travel_3.jpg" alt="">
+      <img src="./assets/images/travel_4.jpg" alt="">
+      <img src="./assets/images/travel_5.jpg" alt="">
+    </div>
+    <div class="mid">
+      <div class="tag">
+        <img src="./assets/images/name_project.png" alt="">
+      </div>
+      <div class="country">
+        <img src="./assets/images/vn_img.png" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <img src="./assets/images/food_1.jpg" alt="">
+      <img src="./assets/images/food_2.jpg" alt="">
+      <img src="./assets/images/food_3.jpg" alt="">
+      <img src="./assets/images/food_4.jpg" alt="">
+      <img src="./assets/images/food_5.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="infor" class="two">
+    <div class="head">
+      <p style="font-family: 'Praise', cursive;">Food and Travelling</p>
+    </div>
+    <video autoplay muted class="video-landscape" src="./assets/videos/vn_landscape.mp4"></video>
+    <div class="text">
+      <p style="font-family: 'Dancing Script', cursive;">Đây là nơi giúp bạn tìm hiểu và khám phá những địa điểm và món ăn ở Việt Nam.
+        giúp bạn thêm phần nào hiểu hơn về đất nước hình chữ S này.
+      </p>
+    </div>
+  </section>
+
+  <section id="travel" class="three">
+    <div class="travel-map">
+      <img style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);" src="./assets/images/travel_map_vn.jpg" alt="">
+      <div class="city">
+        <img src="./assets/images/hanoi_img.png" alt="">
+        <img src="./assets/images/saigon_img.png" alt="">
+      </div>
+    </div>
+    <div class="content">
+      <h1 class="hidden" id="heading" style="font-family: 'Praise', cursive;">Du Lịch</h1>
+      <p class="hidden" id="travel-text" style="font-family: 'Dancing Script', cursive;"></p>
+      <button class="explore" style="background-color: #223440; font-family: 'Comforter', cursive;"><a style="text-decoration: none; color: #ecfdea;" href="./pages/travel.html">Khám Phá</a></button>
+    </div>
+  </section>
+
+  <section id="food" class="four">
+    <div class="content">
+      <h1 class="hidden" id="heading" style="font-family: 'Praise', cursive;">Ẩm Thực</h1>
+      <p class="hidden" id="food-text" style="font-family: 'Dancing Script', cursive;"></p>
+      <button class="explore" style="background-color: #d4c4ab; font-family: 'Comforter', cursive;"><a style="text-decoration: none; color: #4c6b3d;" href="./pages/food.html">Khám Phá</a></button>
+    </div>
+    <div class="food-map">
+      <div class="cuisine">
+        <img src="./assets/images/pho_img.jpg" alt="">
+        <img src="./assets/images/banhxeo_img.jpg" alt="">
+      </div>
+      <img src="./assets/images/food_map_vn.jpg" alt="">
+    </div>
+  </section>
+
+  <section style="height: fit-content;" class="footer">
+    <p style="margin: 0;">Thành viên</p>
+    <div class="footer-members">
+        <div class="footer-member">
+            Họ tên <br>
+            Mã SV: 22... <br>
+            <i class="fa-solid fa-phone"></i><a href="tel:+84..."> SĐT: +84...</a> <br>
+            <i class="fa-solid fa-envelope"></i><a href="mailto:....@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+        </div>
+        <div class="footer-member">
+            Họ tên <br>
+            Mã SV: 22... <br>
+            <i class="fa-solid fa-phone"></i><a href="tel:+84..."> SĐT: +84...</a> <br>
+            <i class="fa-solid fa-envelope"></i><a href="mailto:....@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+        </div>
+        <div class="footer-member">
+            Họ tên <br>
+            Mã SV: 22... <br>
+            <i class="fa-solid fa-phone"></i><a href="tel:+84..."> SĐT: +84...</a> <br>
+            <i class="fa-solid fa-envelope"></i><a href="mailto:....@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+        </div>
+    </div>
+    <div class="footer-school">
+        <b>Copyright © 2017-2023 - Trường Đại học Công nghệ Thông tin & Truyền Thông Việt - Hàn, Đại học Đà Nẵng</b> <br>
+        <i class="fa-solid fa-house"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+Th%C3%B4ng+tin+v%C3%A0+Truy%E1%BB%81n+th%C3%B4ng+Vi%E1%BB%87t+-+H%C3%A0n/@15.9752982,108.2497801,17z/data=!3m1!4b1!4m6!3m5!1s0x3142108997dc971f:0x1295cb3d313469c9!8m2!3d15.9752931!4d108.252355!16s%2Fg%2F1yjg80dyy?hl=vi&entry=ttu" target="_blank"> Địa chỉ: Khu Đô thị Đại học Đà Nẵng, Đường Nam Kỳ Khởi Nghĩa, quận Ngũ Hành Sơn, TP. Đà Nẵng</a> <br>
+        <i class="fa-solid fa-phone"></i><a href="tel:02366552688"> Điện thoại: 0236.6.552.688</a> 
+        <i class="fa-solid fa-envelope"></i><a href="mailto:daotao@vku.udn.vn"> daotao@vku.udn.vn</a> 
+    </div>
+  </section>
+
+  <button id="myBtn" title="Go to top">v</button>
+
+</body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩm Thực Việt Nam - Food & Travel</title>
+    
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <header class="menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo Food & Travel" class="menu-logo"></a>
+        <ul class="menu-nav">
+            <li><a href="../index.html">TRANG CHỦ</a></li>
+            <li><a id="am_thuc" href="./food.html">ẨM THỰC</a></li>
+            <li><a id="du_lich" href="./travel.html">DU LỊCH</a></li>
+            <li><a href="./contact.html">LIÊN HỆ</a></li>
+        </ul>
+    </header>
+
+    <div class="header">
+        <div class="img-slides">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/Bac.png" alt="Ẩm thực miền Bắc" class="d-block" style="width:100%">
+                        <div class="carousel-info">
+                            <p>Nét đặc trưng trong ẩm thực miền Bắc chính là sự hài hòa trong cảm quan, hương vị rất vừa phải, không quá chua, quá cay, quá mặn hay quá nồng. Ẩm thực miền Bắc đề cao sự thanh tao, đạm bạc nhưng vẫn tôn lên được những hương vị tinh túy của những món ăn.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/Trung.png" alt="Ẩm thực miền Trung" class="d-block" style="width:100%">
+                        <div class="carousel-info">
+                            <p>Ẩm thực miền Trung là một tổng thể cân đối, hài hòa và tinh tế. Các món ăn miền Trung mang hương vị đặc trưng là cay và mặn, vị ngọt nhưng vừa phải. Món ăn dù có đơn giản thì cũng phải đậm đà, bởi theo quan niệm của người miền Trung món ăn phải đậm đà thì mới ngon.</p>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/Nam.png" alt="Ẩm thực miền Nam" class="d-block" style="width:100%">
+                        <div class="carousel-info">
+                            <p>Ẩm thực miền Nam từ lâu được yêu thích bởi hương vị dân dã, thơm ngon từ chính những nguyên liệu gần gũi, thân thuộc. Người dân nơi đây gửi gắm vào từng món ăn những gì tinh túy nhất của đất phù sa và cả phẩm chất thật thà vốn có của họ.</p>
+                        </div>  
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="content row">
+        <div class="content-menu col-md-3">
+            <div id="myBtnContainer">
+                <p>Mục lục</p>
+                <ul>
+                    <li class="bttn active allEl" onclick="filterSelection('all')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Tất cả</span>
+                    </li>
+                    <li class="bttn nor" onclick="filterSelection('northern')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Miền Bắc</span>
+                    </li>
+                    <li class="bttn midd" onclick="filterSelection('middle')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Miền Trung</span>
+                    </li>
+                    <li class="bttn sou" onclick="filterSelection('southern')">
+                        <span><i class="fa-solid fa-circle-notch content-menu-icon"></i></span>
+                        <span class="content-menu-nav">Miền Nam</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-info col-md-9">
+            <p>Danh sách món ăn</p>
+            <div class="row">
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/BanhEpHue.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh ép Huế</h5>
+                            <p>Chiếc bánh ép Huế nhỏ nhưng có vị béo ngậy, dai của bánh, chua giòn rau củ, mùi thơm của hành lá, thịt, trứng, mùi dậy của hải sản mực tôm cá…</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/KeoDua.jpeg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Kẹo dừa Bến Tre</h5>
+                            <p>Kẹo dừa Bến Tre không chỉ là một món ăn chơi mà còn là món quà biếu thân tình đặc sản miền Tây.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/BunChaHaNoi.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bún chả Hà Nội</h5>
+                            <p>Chả nướng than thơm lừng, bún trắng muốt, nước chấm hài hòa chua ngọt dậy vị tỏi ớt.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/ChaCaLaVong.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Chả cá Lã Vọng</h5>
+                            <p>Chả cá Lã Vọng đặc sản Hà Nội từ cá lăng tẩm ướp nướng than rồi rán giòn trên chảo mỡ.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/CaLocNuongTrui.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Cá lóc nướng trui</h5>
+                            <p>Cá lóc nướng trui bình dị dân dã miền Tây sông nước thơm lừng đậm đà.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/LauCaKeo.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Lẩu cá kèo lá giang</h5>
+                            <p>Món lẩu dân dã đậm chất Nam Bộ với vị chua thanh của lá giang hòa quyện vị béo ngọt của cá kèo.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/BunBoHue.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bún bò Huế</h5>
+                            <p>Đặc sản xứ Huế với nước dùng đậm đà hương sả và mắm ruốc đặc trưng.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/MyQuang.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Mỳ Quảng</h5>
+                            <p>Mỳ Quảng đặc sản Quảng Nam - Đà Nẵng với sợi mì mềm mại, nước dùng đậm đà và đậu phụng giòn thơm.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/BunCaRoDong.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bún cá rô đồng Hà Nam</h5>
+                            <p>Bún cá rô đồng đậm đà hương vị đồng quê với cá chiên giòn và nước dùng ngọt thanh.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone northern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/NemChuaQuangYen.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Nem chua Quảng Yên</h5>
+                            <p>Đặc sản Quảng Ninh với hương vị chua ngọt hài hòa, giòn sần sật truyền thống.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone southern">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/BanhCanhGhe.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Bánh canh ghẹ</h5>
+                            <p>Bánh canh ghẹ Vũng Tàu nóng hổi với sợi bánh dai mềm và thịt ghẹ tươi đậm đà.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-info-card col-xl-3 col-lg-4 col-md-6 col-6 showNone middle">
+                    <a href="./food-detail.html">
+                        <div class="content-card-img" style="background-image: url(../assets/images/CaoLau.jpg);">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                        <div class="content-card-info">
+                            <h5>Cao Lầu</h5>
+                            <p>Món mì đặc trưng Hội An với sợi mì vàng ươm, thịt xá xíu và rau sống tươi ngon.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Thành viên dự án</p>
+        <div class="footer-members">
+            <div class="footer-member">
+                Thành viên 1 <br>
+                Mã SV: VKU <br>
+                <i class="fa-solid fa-phone"></i><a href="tel:+842366552688"> SĐT: +84...</a> <br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:daotao@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+            </div>
+            <div class="footer-member">
+                Thành viên 2 <br>
+                Mã SV: VKU <br>
+                <i class="fa-solid fa-phone"></i><a href="tel:+842366552688"> SĐT: +84...</a> <br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:daotao@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+            </div>
+            <div class="footer-member">
+                Thành viên 3 <br>
+                Mã SV: VKU <br>
+                <i class="fa-solid fa-phone"></i><a href="tel:+842366552688"> SĐT: +84...</a> <br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:daotao@vku.udn.vn"> Email: ....@vku.udn.vn</a>
+            </div>
+        </div>
+       <div class="footer-school">
+            <b>Copyright © 2017-2026 - Trường Đại học Công nghệ Thông tin & Truyền Thông Việt - Hàn, Đại học Đà Nẵng</b> <br>
+            <i class="fa-solid fa-house"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+Th%C3%B4ng+tin+v%C3%A0+Truy%E1%BB%81n+th%C3%B4ng+Vi%E1%BB%87t+-+H%C3%A0n" target="_blank"> Địa chỉ: Khu Đô thị Đại học Đà Nẵng, Đường Nam Kỳ Khởi Nghĩa, quận Ngũ Hành Sơn, TP. Đà Nẵng</a> <br>
+            <i class="fa-solid fa-phone"></i><a href="tel:02366552688"> Điện thoại: 0236.6.552.688</a> 
+            <i class="fa-solid fa-envelope"></i><a href="mailto:daotao@vku.udn.vn"> daotao@vku.udn.vn</a> 
+       </div>
+    </footer>
+
+    <script src="../assets/js/food.js"></script>
+</body>
+</html>
