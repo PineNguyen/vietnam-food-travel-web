@@ -1,0 +1,202 @@
+[
+  {
+    "id": "banh-ep-hue",
+    "title": "Bánh ép Huế",
+    "region": "middle",
+    "image": "../assets/images/BanhEpHue.jpg",
+    "description": "Chiếc bánh ép Huế nhỏ nhưng có vị béo ngậy, dai của bánh, chua giòn rau củ, mùi thơm của hành lá, thịt, trứng...",
+    "detailUrl": "./food-detail.html?id=banh-ep-hue"
+  },
+  {
+    "id": "keo-dua-ben-tre",
+    "title": "Kẹo dừa Bến Tre",
+    "region": "southern",
+    "image": "../assets/images/KeoDua.jpeg",
+    "description": "Kẹo dừa Bến Tre không chỉ là một món ăn chơi mà còn là món quà biếu thân tình đặc sản miền Tây.",
+    "detailUrl": "./food-detail.html?id=keo-dua-ben-tre"
+  },
+  {
+    "id": "bun-cha-ha-noi",
+    "title": "Bún chả Hà Nội",
+    "region": "northern",
+    "image": "../assets/images/BunChaHaNoi.jpg",
+    "description": "Chả nướng than thơm lừng, bún trắng muốt, nước chấm hài hòa chua ngọt dậy vị tỏi ớt.",
+    "detailUrl": "./food-detail.html?id=bun-cha-ha-noi"
+  },
+  {
+    "id": "cha-ca-la-vong",
+    "title": "Chả cá Lã Vọng",
+    "region": "northern",
+    "image": "../assets/images/ChaCaLaVong.jpg",
+    "description": "Chả cá Lã Vọng đặc sản Hà Nội từ cá lăng tẩm ướp nướng than rồi rán giòn trên chảo mỡ.",
+    "detailUrl": "./food-detail.html?id=cha-ca-la-vong"
+  },
+  {
+    "id": "ca-loc-nuong-trui",
+    "title": "Cá lóc nướng trui",
+    "region": "southern",
+    "image": "../assets/images/CaLocNuongTrui.jpg",
+    "description": "Cá lóc nướng trui bình dị dân dã miền Tây sông nước thơm lừng đậm đà.",
+    "detailUrl": "./food-detail.html?id=ca-loc-nuong-trui"
+  },
+  {
+    "id": "lau-ca-keo",
+    "title": "Lẩu cá kèo lá giang",
+    "region": "southern",
+    "image": "../assets/images/LauCaKeo.jpg",
+    "description": "Món lẩu dân dã đậm chất Nam Bộ với vị chua thanh của lá giang hòa quyện vị béo ngọt của cá kèo.",
+    "detailUrl": "./food-detail.html?id=lau-ca-keo"
+  },
+  {
+    "id": "bun-bo-hue",
+    "title": "Bún bò Huế",
+    "region": "middle",
+    "image": "../assets/images/BunBoHue.jpg",
+    "description": "Đặc sản xứ Huế với nước dùng đậm đà hương sả và mắm ruốc đặc trưng.",
+    "detailUrl": "./food-detail.html?id=bun-bo-hue"
+  },
+  {
+    "id": "my-quang",
+    "title": "Mỳ Quảng",
+    "region": "middle",
+    "image": "../assets/images/MyQuang.jpg",
+    "description": "Mỳ Quảng đặc sản Quảng Nam - Đà Nẵng với sợi mì mềm mại, nước dùng đậm đà và đậu phụng giòn thơm.",
+    "detailUrl": "./food-detail.html?id=my-quang"
+  },
+  {
+    "id": "bun-ca-ro-dong",
+    "title": "Bún cá rô đồng Hà Nam",
+    "region": "northern",
+    "image": "../assets/images/BunCaRoDong.jpg",
+    "description": "Bún cá rô đồng đậm đà hương vị đồng quê với cá chiên giòn và nước dùng ngọt thanh.",
+    "detailUrl": "./food-detail.html?id=bun-ca-ro-dong"
+  },
+  {
+    "id": "nem-chua-quang-yen",
+    "title": "Nem chua Quảng Yên",
+    "region": "northern",
+    "image": "../assets/images/NemChuaQuangYen.jpg",
+    "description": "Đặc sản Quảng Ninh với hương vị chua ngọt hài hòa, giòn sần sật truyền thống.",
+    "detailUrl": "./food-detail.html?id=nem-chua-quang-yen"
+  },
+  {
+    "id": "banh-canh-ghe",
+    "title": "Bánh canh ghẹ",
+    "region": "southern",
+    "image": "../assets/images/BanhCanhGhe.jpg",
+    "description": "Bánh canh ghẹ Vũng Tàu nóng hổi với sợi bánh dai mềm và thịt ghẹ tươi đậm đà.",
+    "detailUrl": "./food-detail.html?id=banh-canh-ghe"
+  },
+  {
+    "id": "cao-lau",
+    "title": "Cao Lầu",
+    "region": "middle",
+    "image": "../assets/images/CaoLau.jpg",
+    "description": "Món mì đặc trưng Hội An với sợi mì vàng ươm, thịt xá xíu và rau sống tươi ngon.",
+    "detailUrl": "./food-detail.html?id=cao-lau"
+  },
+  {
+    "id": "com-lam-bac-kan",
+    "title": "Cơm lam Bắc Kạn",
+    "region": "northern",
+    "image": "../assets/images/ComLamBacKan.png",
+    "description": "Cơm nướng trong ống tre dẻo thơm, ngọt dịu vị nếp Tây Bắc.",
+    "detailUrl": "./food-detail.html?id=com-lam-bac-kan"
+  },
+  {
+    "id": "goi-hu-cu-dua",
+    "title": "Gỏi hủ củ dừa",
+    "region": "southern",
+    "image": "../assets/images/GoiHuCuDua.jpg",
+    "description": "Món gỏi giòn ngọt béo ngậy từ phần đọt non cây dừa Bến Tre.",
+    "detailUrl": "./food-detail.html?id=goi-hu-cu-dua"
+  },
+  {
+    "id": "banh-canh-he",
+    "title": "Bánh canh hẹ Phú Yên",
+    "region": "middle",
+    "image": "../assets/images/BanhCanhHe.jpg",
+    "description": "Nổi bật với màu xanh mát của hẹ, chả cá chiên vàng thơm ngon và nước lèo cá tươi thanh ngọt.",
+    "detailUrl": "./food-detail.html?id=banh-canh-he"
+  },
+  {
+    "id": "banh-gai-ninh-giang",
+    "title": "Bánh gai Ninh Giang",
+    "region": "northern",
+    "image": "../assets/images/BanhGaiNinhGiang.png",
+    "description": "Đặc sản Hải Dương với màu đen dẻo quánh, nhân đậu xanh dừa béo ngọt thơm mùi lá gai.",
+    "detailUrl": "./food-detail.html?id=banh-gai-ninh-giang"
+  },
+  {
+    "id": "keo-cu-do",
+    "title": "Kẹo Cu đơ",
+    "region": "middle",
+    "image": "../assets/images/KeoCuDo.webp",
+    "description": "Đặc sản Hà Tĩnh làm từ đậu phộng và mật mía dẻo thơm ăn cùng bánh tráng giòn.",
+    "detailUrl": "./food-detail.html?id=keo-cu-do"
+  },
+  {
+    "id": "banh-duc-la-dua",
+    "title": "Bánh đúc lá dứa",
+    "region": "southern",
+    "image": "../assets/images/BanhDucLaDua.jpg",
+    "description": "Bánh đúc lá dứa béo ngậy nước cốt dừa và thoang thoảng hương thơm lá dứa dịu nhẹ.",
+    "detailUrl": "./food-detail.html?id=banh-duc-la-dua"
+  },
+  {
+    "id": "goi-ca-trich",
+    "title": "Gỏi cá trích",
+    "region": "southern",
+    "image": "../assets/images/GoiCaTrich.jpg",
+    "description": "Đặc sản đảo Ngọc Phú Quốc tươi ngon ăn kèm bánh tráng và nước chấm béo bùi.",
+    "detailUrl": "./food-detail.html?id=goi-ca-trich"
+  },
+  {
+    "id": "trau-gac-bep",
+    "title": "Trâu gác bếp",
+    "region": "northern",
+    "image": "../assets/images/TrauGacBep.png",
+    "description": "Đặc sản Tây Bắc với vị cay tê mắc khén và hương khói bếp đậm đà.",
+    "detailUrl": "./food-detail.html?id=trau-gac-bep"
+  },
+  {
+    "id": "com-lang-vong",
+    "title": "Cốm làng Vòng",
+    "region": "northern",
+    "image": "../assets/images/ComLangVong.png",
+    "description": "Nét văn hóa ẩm thực thu Hà Nội với hạt cốm dẻo thơm bọc trong lá sen ngát hương.",
+    "detailUrl": "./food-detail.html?id=com-lang-vong"
+  },
+  {
+    "id": "banh-dau-xanh",
+    "title": "Bánh đậu xanh",
+    "region": "northern",
+    "image": "../assets/images/BanhDauXanh.png",
+    "description": "Bánh đậu xanh Hải Dương ngọt thanh tan ngay trong miệng thơm lừng hương hoa bưởi.",
+    "detailUrl": "./food-detail.html?id=banh-dau-xanh"
+  },
+  {
+    "id": "banh-xeo-can-tho",
+    "title": "Bánh xèo Cần Thơ",
+    "region": "southern",
+    "image": "../assets/images/BãnheoCanTho.webp",
+    "description": "Bánh xèo miền Tây giòn rụm nhân tôm thịt đậu xanh ăn kèm rau rừng phong phú.",
+    "detailUrl": "./food-detail.html?id=banh-xeo-can-tho"
+  },
+  {
+    "id": "goi-ca-nam-o",
+    "title": "Gỏi cá Nam Ô",
+    "region": "middle",
+    "image": "../assets/images/GoiCaNamO.jpg",
+    "description": "Đặc sản Đà Nẵng với 2 phiên bản gỏi khô và gỏi ướt thấm đượm gia vị truyền thống.",
+    "detailUrl": "./food-detail.html?id=goi-ca-nam-o"
+  },
+  {
+    "id": "ga-doi-tien-yen",
+    "title": "Gà đồi Tiên Yên",
+    "region": "northern",
+    "image": "../assets/images/GaDoiTienYen.jpg",
+    "description": "Đặc sản Quảng Ninh với da vàng giòn mượt, thịt chắc ngọt thơm tự nhiên.",
+    "detailUrl": "./food-detail.html?id=ga-doi-tien-yen"
+  }
+]

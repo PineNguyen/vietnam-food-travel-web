@@ -69,19 +69,8 @@
   </section>
 
   <section id="projects">
-    <div class="projects-content">
-      <div class="project">
-        <a href="./mienbac.html"><img src="../assets/images/mienbac.jpg" alt="Du lịch Miền Bắc"></a>
-        <h3 id="B">Miền Bắc</h3>
-      </div>
-      <div class="project">
-        <a href="./mientrung.html"><img src="../assets/images/mientrung.png" alt="Du lịch Miền Trung"></a>
-        <h3 id="T">Miền Trung</h3>
-      </div>
-      <div class="project">
-        <a href="./miennam.html"><img src="../assets/images/miennam.jpg" alt="Du lịch Miền Nam"></a>
-        <h3 id="N">Miền Nam</h3>
-      </div>
+    <div class="projects-content" id="projects-content-container">
+      <!-- Destination items dynamically rendered from src/data/destinations.json via ES Module -->
     </div>
   </section>
 
@@ -132,6 +121,6 @@
    </div>
   </footer>
 
-  <script src="../assets/js/travel.js"></script>
+  <script type="module" src="../assets/js/travel.js"></script>
 </body>
 </html>

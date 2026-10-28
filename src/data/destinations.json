@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ha-noi",
+    "title": "Hà Nội",
+    "region": "northern",
+    "image": "../assets/images/hanoi.jpeg",
+    "description": "Thủ đô ngàn năm văn hóa với di tích lịch sử và ẩm thực phố cổ thanh lịch.",
+    "detailUrl": "./travel-detail.html?id=ha-noi"
+  },
+  {
+    "id": "quang-ninh",
+    "title": "Quảng Ninh",
+    "region": "northern",
+    "image": "../assets/images/quangninh.jpg",
+    "description": "Vịnh Hạ Long kỳ quan thiên nhiên thế giới và đảo Cô Tô thơ mộng.",
+    "detailUrl": "./travel-detail.html?id=quang-ninh"
+  },
+  {
+    "id": "sapa",
+    "title": "Lào Cai (Sapa)",
+    "region": "northern",
+    "image": "../assets/images/sapa.jpg",
+    "description": "Thị trấn trong sương với ruộng bậc thang hùng vĩ và đỉnh Fansipan huyền thoại.",
+    "detailUrl": "./travel-detail.html?id=sapa"
+  },
+  {
+    "id": "son-la",
+    "title": "Sơn La (Mộc Châu)",
+    "region": "northern",
+    "image": "../assets/images/sonla.jpg",
+    "description": "Cao nguyên Mộc Châu xanh mút đồi chè và mùa hoa mơ hoa mận rực rỡ.",
+    "detailUrl": "./travel-detail.html?id=son-la"
+  },
+  {
+    "id": "hai-phong",
+    "title": "Hải Phòng (Cát Bà)",
+    "region": "northern",
+    "image": "../assets/images/haiphong.jpg",
+    "description": "Thành phố hoa phượng đỏ với đảo Cát Bà xanh ngắt và vịnh Lan Hạ thơ mộng.",
+    "detailUrl": "./travel-detail.html?id=hai-phong"
+  },
+  {
+    "id": "ninh-binh",
+    "title": "Ninh Bình",
+    "region": "northern",
+    "image": "../assets/images/NinhBinh.jpg",
+    "description": "Danh thắng Tràng An, Tam Cốc - Bích Động non nước hữu tình được mệnh danh Nam Thiên Đệ Nhất Động.",
+    "detailUrl": "./travel-detail.html?id=ninh-binh"
+  },
+  {
+    "id": "vinh-phuc",
+    "title": "Vĩnh Phúc (Tam Đảo)",
+    "region": "northern",
+    "image": "../assets/images/VinhPhuc.jpg",
+    "description": "Tam Đảo ở độ cao 900m với khí hậu mát mẻ quanh năm là thiên đường nghỉ dưỡng.",
+    "detailUrl": "./travel-detail.html?id=vinh-phuc"
+  },
+  {
+    "id": "hoa-binh",
+    "title": "Hòa Bình (Thung Nai)",
+    "region": "northern",
+    "image": "../assets/images/HoaBinh.jpg",
+    "description": "Thung Nai sông nước hữu tình trên lòng hồ sông Đà được ví như Hạ Long trên cạn.",
+    "detailUrl": "./travel-detail.html?id=hoa-binh"
+  },
+  {
+    "id": "ha-giang",
+    "title": "Hà Giang",
+    "region": "northern",
+    "image": "../assets/images/HaGiang.jpg",
+    "description": "Cao nguyên đá Đồng Văn hùng vĩ và những mùa hoa tam giác mạch rực rỡ.",
+    "detailUrl": "./travel-detail.html?id=ha-giang"
+  },
+  {
+    "id": "ba-na-hills",
+    "title": "Bà Nà Hills (Đà Nẵng)",
+    "region": "middle",
+    "image": "../assets/images/1.jpg",
+    "description": "Đường lên tiên cảnh với Cầu Vàng nổi tiếng thế giới và kiến trúc Châu Âu lãng mạn.",
+    "detailUrl": "./travel-detail.html?id=ba-na-hills"
+  },
+  {
+    "id": "cu-lao-cham",
+    "title": "Cù Lao Chàm (Hội An)",
+    "region": "middle",
+    "image": "../assets/images/2.jpg",
+    "description": "Cụm đảo hoang sơ quyến rũ với rặng san hô rực rỡ và nước biển trong vắt.",
+    "detailUrl": "./travel-detail.html?id=cu-lao-cham"
+  },
+  {
+    "id": "phong-nha",
+    "title": "Phong Nha Kẻ Bàng (Quảng Bình)",
+    "region": "middle",
+    "image": "../assets/images/3.jpg",
+    "description": "Vương quốc hang động thế giới với Động Phong Nha và Sơn Đòong tráng lệ.",
+    "detailUrl": "./travel-detail.html?id=phong-nha"
+  },
+  {
+    "id": "hoi-an",
+    "title": "Phố cổ Hội An (Quảng Nam)",
+    "region": "middle",
+    "image": "../assets/images/4.jpg",
+    "description": "Phố cổ rực rỡ đèn lồng bên dòng sông Hoài thơ mộng hoài cổ.",
+    "detailUrl": "./travel-detail.html?id=hoi-an"
+  },
+  {
+    "id": "dai-noi-hue",
+    "title": "Đại Nội Cố đô Huế",
+    "region": "middle",
+    "image": "../assets/images/5.jpg",
+    "description": "Di sản văn hóa thế giới lưu giữ nét cổ kính trầm mặc của vương triều nhà Nguyễn.",
+    "detailUrl": "./travel-detail.html?id=dai-noi-hue"
+  },
+  {
+    "id": "binh-ba",
+    "title": "Đảo Bình Ba (Nha Trang)",
+    "region": "middle",
+    "image": "../assets/images/6.jpg",
+    "description": "Đảo tôm hùm hoang sơ với các bãi tắm nước trong như ngọc bích.",
+    "detailUrl": "./travel-detail.html?id=binh-ba"
+  },
+  {
+    "id": "eo-gio",
+    "title": "Eo Gió (Bình Định)",
+    "region": "middle",
+    "image": "../assets/images/7.jpg",
+    "description": "Cung đường biển hùng vĩ nhất Quy Nhơn chìm đắm trong ánh hoàng hôn rực rỡ.",
+    "detailUrl": "./travel-detail.html?id=eo-gio"
+  },
+  {
+    "id": "ghenh-da-dia",
+    "title": "Ghềnh Đá Đĩa (Phú Yên)",
+    "region": "middle",
+    "image": "../assets/images/8.jpg",
+    "description": "Tuyệt tác thiên nhiên với hàng ngàn khối đá lăng trụ xếp chồng độc đáo.",
+    "detailUrl": "./travel-detail.html?id=ghenh-da-dia"
+  },
+  {
+    "id": "phu-quy",
+    "title": "Đảo Phú Quý (Bình Thuận)",
+    "region": "middle",
+    "image": "../assets/images/9.jpg",
+    "description": "Hòn đảo mộng mơ thiên đường lặn biển ngắm san hô rực rỡ.",
+    "detailUrl": "./travel-detail.html?id=phu-quy"
+  },
+  {
+    "id": "hcm",
+    "title": "TP. Hồ Chí Minh",
+    "region": "southern",
+    "image": "../assets/images/hcm.jpg",
+    "description": "Đô thị sầm uất hiện đại bậc nhất Việt Nam với Landmark 81 cao chọc trời.",
+    "detailUrl": "./travel-detail.html?id=hcm"
+  },
+  {
+    "id": "tay-ninh",
+    "title": "Tây Ninh (Núi Bà Đen)",
+    "region": "southern",
+    "image": "../assets/images/tayninh.jpg",
+    "description": "Nóc nhà Nam Bộ hùng vĩ cùng Tòa thánh Tây Ninh kiến trúc tâm linh độc đáo.",
+    "detailUrl": "./travel-detail.html?id=tay-ninh"
+  },
+  {
+    "id": "vung-tau",
+    "title": "Vũng Tàu",
+    "region": "southern",
+    "image": "../assets/images/vungtau.jpg",
+    "description": "Thành phố biển thanh bình rợp bóng cây xanh với Tượng Chúa Kito và ngọn Hải Đăng.",
+    "detailUrl": "./travel-detail.html?id=vung-tau"
+  },
+  {
+    "id": "long-an",
+    "title": "Long An",
+    "region": "southern",
+    "image": "../assets/images/longan.jpg",
+    "description": "Đồng sen bát ngát và làng nổi Tân Lập rợp bóng rừng tràm bạt ngàn.",
+    "detailUrl": "./travel-detail.html?id=long-an"
+  },
+  {
+    "id": "dong-thap",
+    "title": "Đồng Tháp",
+    "region": "southern",
+    "image": "../assets/images/dongthap.jpg",
+    "description": "Đồng sen Tháp Mười bao la và làng hoa Sa Đéc rực rỡ muôn sắc màu.",
+    "detailUrl": "./travel-detail.html?id=dong-thap"
+  },
+  {
+    "id": "an-giang",
+    "title": "An Giang",
+    "region": "southern",
+    "image": "../assets/images/angiang.jpg",
+    "description": "Rừng tràm Trà Sư xanh mút và bức tranh đồng quê miền Tây yên bình.",
+    "detailUrl": "./travel-detail.html?id=an-giang"
+  },
+  {
+    "id": "can-tho",
+    "title": "Cần Thơ",
+    "region": "southern",
+    "image": "../assets/images/cantho.jpg",
+    "description": "Thủ phủ Tây Đô nổi tiếng với Chợ nổi Cái Răng và bến Ninh Kiều hiền hòa.",
+    "detailUrl": "./travel-detail.html?id=can-tho"
+  },
+  {
+    "id": "kien-giang",
+    "title": "Kiên Giang (Hà Tiên)",
+    "region": "southern",
+    "image": "../assets/images/kiengiang.jpg",
+    "description": "Thắng cảnh Hà Tiên mộng mơ và quần đảo Nam Du nước xanh trong vắt.",
+    "detailUrl": "./travel-detail.html?id=kien-giang"
+  },
+  {
+    "id": "phu-quoc",
+    "title": "Đảo Ngọc Phú Quốc",
+    "region": "southern",
+    "image": "../assets/images/phuquoc.jpg",
+    "description": "Thiên đường nghỉ dưỡng biển đảo hàng đầu Châu Á với hoàng hôn lãng mạn.",
+    "detailUrl": "./travel-detail.html?id=phu-quoc"
+  }
+]

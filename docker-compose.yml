@@ -1,0 +1,32 @@
+services:
+  # ----------------------------------------------------
+  # Frontend Service (Vite Static Web served by Nginx)
+  # ----------------------------------------------------
+  web-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vietnam-food-travel-frontend
+    restart: always
+    ports:
+      - "8088:80"
+    environment:
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ----------------------------------------------------
+  # Ví dụ cấu hình khi mở rộng thêm Backend API & RDS:
+  # ----------------------------------------------------
+  # api-backend:
+  #   build: ./server
+  #   container_name: vietnam-food-travel-backend
+  #   restart: always
+  #   environment:
+  #     - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
+  #   ports:
+  #     - "5000:5000"

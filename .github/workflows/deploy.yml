@@ -1,0 +1,67 @@
+name: CI/CD Pipeline Local Demo (Self-hosted)
+
+on:
+  push:
+    branches: [ "main", "update/refactor-codebase-for-project" ]
+  workflow_dispatch:
+
+jobs:
+  # ========================================================
+  # JOB 1: Kiểm tra tính toàn vẹn (Chạy trên GitHub Cloud)
+  # ========================================================
+  build-and-test:
+    name: Build & Test Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Cài đặt dependencies
+        run: npm ci
+
+      - name: Kiểm tra tính toàn vẹn (Build thử)
+        run: npm run build
+
+  # ========================================================
+  # JOB 2: Tự động Deploy (Chạy trực tiếp trên máy của bạn)
+  # ========================================================
+  deploy:
+    name: Local Deployment
+    needs: build-and-test
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Đóng gói Docker Image
+        run: |
+          echo "Đang build Docker Image trên máy local..."
+          docker build -t vietnam-food-travel:latest .
+
+      - name: Khởi chạy lại Container
+        run: |
+          echo "Khởi động lại container..."
+          docker stop vietnam-food-travel-web || true
+          docker rm vietnam-food-travel-web || true
+          docker run -d \
+            --name vietnam-food-travel-web \
+            --restart always \
+            -p 80:80 \
+            vietnam-food-travel:latest
+
+      - name: Kiểm tra sức khỏe ứng dụng
+        run: |
+          echo "Chờ container khởi động & kiểm tra health..."
+          sleep 3
+          docker ps -f name=vietnam-food-travel-web
+          curl --fail http://localhost/health || exit 1
+          echo "Deploy thành công và ứng dụng đang hoạt động bình thường!"
+
+      - name: Dọn dẹp Image thừa
+        run: docker image prune -f

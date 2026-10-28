@@ -1,8 +1,16 @@
-// Food Page Filtering & Interaction
+import foodsData from '../../src/data/foods.json';
+import { createFoodCard } from '../../src/components/FoodCard.js';
 
-function filterSelection(c) {
+export function renderFoodsList(containerId = 'food-list-container') {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = foodsData.map(food => createFoodCard(food)).join('');
+}
+
+export function filterSelection(category) {
   const elements = document.getElementsByClassName("showNone");
-  const filter = c === "all" ? "" : c;
+  const filter = category === "all" ? "" : category;
   
   Array.from(elements).forEach(element => {
     if (filter === "" || element.classList.contains(filter)) {
@@ -13,7 +21,13 @@ function filterSelection(c) {
   });
 }
 
+// Make filterSelection available globally for inline onclick handlers if needed
+window.filterSelection = filterSelection;
+
 document.addEventListener("DOMContentLoaded", function () {
+  // Render foods list from JSON
+  renderFoodsList();
+
   // Initialize filter
   filterSelection("all");
 

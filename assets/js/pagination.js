@@ -2,7 +2,7 @@
 
 let currentPage = 1;
 
-function nextPage() {
+export function nextPage() {
   const pages = document.querySelectorAll('section[id^="page"]');
   if (pages.length === 0) return;
   
@@ -13,7 +13,7 @@ function nextPage() {
   showPage(currentPage);
 }
 
-function showPage(pageNumber) {
+export function showPage(pageNumber) {
   const pages = document.querySelectorAll('section[id^="page"]');
   const navigationItems = document.querySelectorAll('#page-navigation li');
   
@@ -37,3 +37,7 @@ function showPage(pageNumber) {
     }
   });
 }
+
+// Bind to window for inline onclick attributes
+window.showPage = showPage;
+window.nextPage = nextPage;
